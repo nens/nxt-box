@@ -16,12 +16,13 @@ Install
 Add nxt-box to your Django site::
 
 - add nxt-box to setup.py
-- add nxt-box to buildout.cfg as auto-checkout and add source (for now)
 - add nxt_box to settings.py
 - include js and css in your page
 
 <script type="text/javascript" src="{{ STATIC_URL }}nxt_box/nxt-box.js"></script>
 <link href="{{ STATIC_URL }}nxt_box/nxt-box.css" rel="stylesheet"/>
+
+- optionally add nxt-box to buildout.cfg as auto-checkout and add source if you want to develop.
 
 
 Usage
