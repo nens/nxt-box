@@ -7,6 +7,9 @@ app.controller("BoxAwesome",
 	};
 
     $scope.close_box = function(){
+        // If you have to shut down some things, use a listener on this broadcast.
+        $scope.$broadcast($scope.box.content.type + "-close");
+
         $scope.box.disabled = true;
         if ($scope.box.content.marker){
             $scope.box.content.marker._icon.classList.remove('selected-icon');

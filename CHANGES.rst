@@ -5,7 +5,7 @@ Changelog of nxt-box
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added broadcast on close_box: Watch "<content.type>-close".
 
 
 0.1 (2013-07-29)
