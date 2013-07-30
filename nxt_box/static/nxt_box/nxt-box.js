@@ -1,6 +1,6 @@
 app.controller("BoxAwesome",
-    ["$scope", "scenario", "socket",
-        function($scope, scenario, socket){
+    ["$scope",
+        function($scope){
     $scope.box = {
         disabled: true,
         content: 'empty'
