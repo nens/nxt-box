@@ -11,6 +11,7 @@ app.controller("BoxAwesome",
         $scope.$broadcast($scope.box.content.type + "-close");
 
         $scope.box.disabled = true;
+        // Somewhat hacky: selected icon lights up
         if ($scope.box.content.marker){
             $scope.box.content.marker._icon.classList.remove('selected-icon');
         }
@@ -18,6 +19,7 @@ app.controller("BoxAwesome",
     };
 
     $scope.$on('open_box', function(message, content) {
+        // Somewhat hacky: selected icon lights up
         if ($scope.box.content.marker !== undefined){
             $scope.box.content.marker._icon.classList.remove('selected-icon');
         }
