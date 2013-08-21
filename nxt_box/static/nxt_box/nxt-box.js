@@ -23,12 +23,14 @@ app.controller("BoxAwesome",
         if ($scope.box.content.marker !== undefined){
             $scope.box.content.marker._icon.classList.remove('selected-icon');
         }
-        if ($scope.box.content !== 'empty') {
-            $scope.close_box();  // close box and clean stuff up.
-        }
         $scope.$apply(function() {
-            $scope.box.content = content;
-            $scope.box.disabled = false;
+            if (($scope.box.content !== 'empty') && ($scope.box.content.properties.hash === content.properties.hash)) {
+                    $scope.close_box();  // close box and clean stuff up.
+                    return
+            } else {
+                $scope.box.content = content;
+                $scope.box.disabled = false;
+            }
         });
         // If you have dynamic content, you should listen to this broadcast.
         $scope.$broadcast(content.type, content);
