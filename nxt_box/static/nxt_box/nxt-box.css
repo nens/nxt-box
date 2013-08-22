@@ -50,10 +50,10 @@
 
 #box-awesome-inner {
 	position: relative;
-	top: -5px;
-	padding: 1em 2em 3em 2em;
-	border-radius: 10px;
+	/*top: -5px;*/
+	border-radius: 2px;
 	width: 400px;
+	/* padding: 1em; */
 
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 15px -5px transparent;
 	background: #FFF;
@@ -78,4 +78,28 @@
 #box-awesome-results p {
 	margin-top: 10px;
 	margin-left: 20px;
+}
+
+.box-awesome-head {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2.7em;
+    background-color: #f4f4f4; 
+}
+
+.box-awesome-action {
+	float: right;
+	width: 2em;
+	height: 2em;
+	padding-top: 0.7em;
+	color: #555555;
+}
+
+.box-awesome-action i {
+	margin-left: 0.5em;
+}
+
+.box-awesome-contents {
+	margin: 1em 0 0 1em;
 }
