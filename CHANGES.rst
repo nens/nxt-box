@@ -5,7 +5,7 @@ Changelog of nxt-box
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Better looking boxes.
 
 
 0.2 (2013-08-20)
