@@ -5,7 +5,7 @@ Changelog of nxt-box
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix code blocks in README.rst 
 
 
 0.3 (2013-08-26)
