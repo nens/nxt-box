@@ -26,16 +26,32 @@ app.controller("BoxAwesome",
         if ($scope.box.content !== 'empty') {
             $scope.close_box();  // close box and clean stuff up.
         }
-        $scope.$apply(function() {
+        if(!$scope.$$phase) {  // Check if already in a $digest or $apply.
+            $scope.$apply(function() {
+                $scope.box.content = content;
+                $scope.box.disabled = false;
+            });
+        } else {
+            // If already in $digest or $apply, don't have to do it again.
             $scope.box.content = content;
             $scope.box.disabled = false;
-        });
+        }
         // If you have dynamic content, you should listen to this broadcast.
         $scope.$broadcast(content.type, content);
     });
 
     // Close the box from another scope using $rootScope.$broadcast
+    // You can give a close box condition. It will only close if
+    // content matches given content.
     $scope.$on('close_box', function(message, content) {
+        for (var i in content) {
+            if ($scope.box.content[i] !== content[i]) {
+                // Close box condition not met.
+                console.log('Close box condition not met.');
+                return;
+            }
+        }
+
         $scope.close_box();
     });
 

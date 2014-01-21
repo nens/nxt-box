@@ -5,6 +5,8 @@ Changelog of nxt-box
 0.4 (unreleased)
 ----------------
 
+- Added close_box conditional.
+
 - Fix code blocks in README.rst 
 
 
