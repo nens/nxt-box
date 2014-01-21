@@ -2,7 +2,7 @@ Changelog of nxt-box
 ===================================================
 
 
-0.4 (unreleased)
+0.4 (2014-01-21)
 ----------------
 
 - Added close_box conditional.
