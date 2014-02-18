@@ -53,7 +53,7 @@
 	/*top: -5px;*/
 	border-radius: 2px;
 	width: 400px;
-	/* padding: 1em; */
+	padding-bottom: 1em; 
 
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 15px -5px transparent;
 	background: #FFF;
@@ -102,4 +102,10 @@
 
 .box-awesome-contents {
 	margin: 1em 0 0 1em;
+}
+
+.small-graph {
+	height: 135px; 
+	position: relative; 
+	top: -20px;
 }
