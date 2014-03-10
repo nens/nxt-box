@@ -5,7 +5,7 @@ Changelog of nxt-box
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Box appears 50 pixels from the top instead of 40.
 
 
 0.4 (2014-01-21)
