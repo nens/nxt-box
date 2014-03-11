@@ -2,7 +2,7 @@ Changelog of nxt-box
 ===================================================
 
 
-0.7 (unreleased)
+0.7 (2014-03-11)
 ----------------
 
 - Jumping marker and box aligned with zoom
