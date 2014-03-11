@@ -30,6 +30,9 @@ app.controller("BoxAwesome",
             $scope.$apply(function() {
                 $scope.box.content = content;
                 $scope.box.disabled = false;
+                if ($scope.box.content.marker !== undefined){
+                    $scope.box.content.marker._icon.classList.add('selected-icon');
+                }
             });
         } else {
             // If already in $digest or $apply, don't have to do it again.
