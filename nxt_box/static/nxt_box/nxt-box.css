@@ -90,7 +90,7 @@
 
 .box-awesome-action {
 	float: right;
-	width: 2em;
+    padding-right: 1em;
 	height: 2em;
 	padding-top: 0.7em;
 	margin-left: 1em;
@@ -102,7 +102,7 @@
 }
 
 .box-awesome-contents {
-	margin: 1em 0 0 1em;
+	padding: 1em 1em 0 1em;
 }
 
 .small-graph {
